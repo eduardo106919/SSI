@@ -1,3 +1,5 @@
 
 # custom
-venv/
+.venv
+.vscode
+
