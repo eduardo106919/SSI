@@ -1,4 +1,4 @@
-# Semana 06
+# Lab 05
 
 Cifras Modernas.
 
@@ -49,11 +49,11 @@ Pagar: 9999 EUR ao cliente A
 
 ## Programa `cfich_aes_cbc.py` e `cfich_aes_ctr.py`
 
-### Questão 03
+#### Questão 03
 
 No modo **CTR**, a alteração de um bit no criptograma afeta apenas **um bit** na mensagem decifrada, na mesma posição, devido à sua natureza de cifra de fluxo. No modo **CBC**, o impacto é duplo: a alteração de um bit num bloco do criptograma corrompe completamente o bloco de texto-limpo correspondente (devido à difusão interna da cifra de bloco) e altera exatamente **um bit** no bloco de texto-limpo seguinte (devido à operação XOR entre o criptograma anterior e a saída da decifração).
 
-### Questão 04
+#### Questão 04
 
 O impacto do programa `chacha20_int_attck.py` será de sucesso total no **AES-CTR**, uma vez que este modo é matematicamente equivalente à ChaCha20 no que toca à maleabilidade baseada em XOR. No **AES-CBC**, o ataque falhará no objetivo de "alterar uma informação específica": ao modificar o criptograma para tentar alterar um texto-limpo, o atacante acabará por destruir no bloco onde a alteração é feita. Embora o bit pretendido possa ser alterado no bloco seguinte, a corrupção do bloco atual torna o ataque detetável ou inútil.
 
