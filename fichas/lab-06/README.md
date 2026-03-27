@@ -1,4 +1,4 @@
-# Semana 07
+# Lab 06
 
 ## MACs
 
